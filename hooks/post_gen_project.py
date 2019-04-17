@@ -63,7 +63,7 @@ print('\n\nInstalling dependencies\n', file=sys.stderr)
 
 # Install python requirements.
 _execute_command(
-   r'python -m pip install -r requirements.txt'
+   r'python -m pip install -r requirements.txt')
 
 # Install node_modules
 _execute_command('npm install --ignore-scripts')
