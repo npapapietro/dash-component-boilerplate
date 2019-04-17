@@ -42,7 +42,7 @@ if install_deps != 'True':
 
 # Create a virtual env
 if sys.version.split(' ')[0] > '3.2':
-    venv = '{} -m venv venv'.format(sys.executable)
+    venv = 'python -m venv venv'
 else:
     venv = 'virtualenv venv'
 
@@ -63,7 +63,7 @@ print('\n\nInstalling dependencies\n', file=sys.stderr)
 
 # Install python requirements.
 _execute_command(
-   r'{} -m pip install -r requirements.txt'.format(python_executable))
+   r'python -m pip install -r requirements.txt'
 
 # Install node_modules
 _execute_command('npm install --ignore-scripts')
